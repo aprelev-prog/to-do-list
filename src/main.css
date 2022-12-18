@@ -1,0 +1,196 @@
+:root{
+  --dark: #374151;
+  --darker: #1F2937;
+  --darkest: #111827;
+  --gray: #6B7280;
+  --light: #EEE;
+  --pink: #EC4899;
+  --purple: #8b5cf6;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dark);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+  /* для того чтобы паддинги не создавали лишних отступов */
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  /* Для того чтобы все элементы встали в столбик */
+  width: 400px;
+}
+
+label{
+
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray);
+
+  margin-left:auto;
+  margin-right:auto;
+  width:380px;
+}
+
+a{
+  color:#7c9ab7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#a-autorization{
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--gray);
+}
+
+#a-autorization:hover{
+  opacity: 0.7;
+}
+
+#a-autorizationn:active{
+  opacity: 0.6;
+}
+
+#p-autorization{
+  margin: 10px 0;
+  color: var(--gray);
+}
+
+input{
+  margin: 10px 0;
+  padding:10px;
+  border: unset;
+  border-bottom: 2px solid ;
+  outline: none;
+  background: none;
+  background-color: var(--darker);
+  border-radius: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+  color:var(--gray);
+
+}
+
+button{
+  padding: 10px;
+  background: #e3e3e3;
+  border: unset;
+  cursor: pointer;
+}
+
+.msg{
+  border: 2px solid #ffa908;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  font-weight:bold;
+}
+
+
+
+#login-autorization{
+  background-color: var(--darker);
+  border-radius: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+  color:var(--gray);
+}
+
+#task::placeholder{
+  color:var(--gray);
+}
+
+#password-autorization{
+  background-color: #1F2937;
+  border-radius: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+  color:var(--gray);
+}
+
+#button-autorization{
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 20%;
+  font-size: 14pt;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#button-autorization:hover{
+  opacity: 0.7;
+}
+
+#button-autorization:active{
+  opacity: 0.6;
+}
+
+#button-register{
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 55%;
+  font-size: 14pt;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#button-register:hover{
+  opacity: 0.7;
+}
+
+#button-register:active{
+  opacity: 0.6;
+}
+
+#button-register-autorization{
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 55%;
+  font-size: 14pt;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#button-register-autorization:hover{
+  opacity: 0.7;
+}
+
+#button-register-autorization:active{
+  opacity: 0.6;
+}
+
+#p-register{
+  margin: 10px 0;
+  color: var(--gray);
+}

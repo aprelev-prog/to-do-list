@@ -1,0 +1,162 @@
+:root{
+  --dark: #374151;
+  --darker: #1F2937;
+  --darkest: #111827;
+  --gray: #6B7280;
+  --light: #EEE;
+  --pink: #EC4899;
+  --purple: #8b5cf6;
+}
+
+*{
+  box-sizing: border-box;;
+  margin: 0;
+  font-family: 'Fira sans', sans-serif;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dark);
+  color: #FFF;
+}
+
+header{
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width:100%;
+  margin: 0 auto;
+}
+
+h1{
+  margin-top:25px;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-bottom: 1rem;
+  margin-left:auto;
+  margin-right:auto;
+  width:380px;
+
+}
+
+h2{
+  margin-top:25px;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-bottom: 1rem;
+  margin-left:auto;
+  margin-right:auto;
+  width:380px;
+}
+
+#new-task-form{
+  display: flex;
+
+}
+
+input,button{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.btn-success{
+  display:flex;
+  margin-right: 400px;
+}
+
+#task{
+  text-align: center;
+  padding: 10px;
+  margin-left: 40%;
+  width:23%;
+  height: 15%;
+  min-width: 23%;
+  background-color: var(--darker);
+  border-radius: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+  color:var(--gray);
+
+}
+
+#task::placeholder{
+  color: var(--gray);
+}
+
+#new-task-submit{
+  color: var(--pink);
+  width: 20%;
+  font-size: 14pt;
+  height: 55px;
+  padding: 10px;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-task-submit:hover{
+  opacity: 0.7;
+}
+
+#new-task-submit:active{
+  opacity: 0.6;
+}
+
+main{
+  flex: 1 1 0%;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list{
+  padding: 1rem;
+}
+
+.task-list h2{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.btn-delete{
+
+  position: absolute;
+  left:1100px;
+  color: var(--pink);
+  font-size:1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-left: 60px;
+}
+
+ul li {
+  margin-top: 10px;
+  list-style-type: none;
+  padding: 15px;
+  margin-left: auto;
+  width:85%;
+  max-width: 800px;
+  min-width: 23%;
+  height: 15%;
+  background-color: var(--darker);
+  border-radius: 1.25rem;
+  color: var(--light);
+  font-size: 1.25rem;
+  color:var(--gray);
+}
